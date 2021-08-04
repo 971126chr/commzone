@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    font-family: 맑은고딕, Malgun Gothic, dotum, gulim, sans-serif;
+}
+label {
+    cursor: pointer;
+}
+.wrap {
+    width: 1024px;
+    margin: 0 auto;
+}
+.header {
+    line-height: 52px;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #c4c4c4;
+}
+h1.h1-img {
+    display: inline-block;
+    padding: 4px 0 0 3px;
+}
+h1.h1-img a {
+    background: url("../img/header/h1.png") no-repeat;
+    font-size: 0;
+    padding: 14px 110px;
+}
+span.header-date {
+    font-size: 14px;
+    color: #8f8f8f;
+    font-weight: bold;
+    position: absolute;
+    top: 40px;
+    left: 33px;
+    line-height: 0;
+    letter-spacing: -0.5px;
+}
+.header form.search-form {
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    right: 65px;
+}
+.search-btn-position {
+    position: relative;
+}
+input.search {
+    font-size: 12px;
+    color: #747474;
+    padding-left: 9px;
+    border: 1px solid #c4c4c4;
+    border-radius: 6px 0 0 6px;
+    line-height: 26px;
+    width: 142px;
+}
+button.search-btn {
+    width: 33px;
+    line-height: 26px;
+    border: 1px solid #c4c4c4;
+    border-radius: 0 6px 6px 0;
+    border-left: none;
+    background: #ededed;
+    position: absolute;
+    top: 13px;
+}
+span.search-btn-img {
+    background: url("../img/header/search-img.png") no-repeat center center;
+    padding: 3.5px 16.5px 3.5px 13.5px;
+}
+
+/*aside 시작*/
+
+.aside, .aside > a {
+    width: 204px;
+}
+a.aside-home {
+    padding-left: 32px;
+}
