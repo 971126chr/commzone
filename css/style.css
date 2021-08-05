@@ -8,6 +8,7 @@ label {
 .wrap {
     width: 1024px;
     margin: 0 auto;
+    position: relative;
 }
 .header {
     line-height: 52px;
@@ -69,9 +70,73 @@ span.search-btn-img {
 
 /*aside 시작*/
 
-.aside, .aside > a {
+.aside {
     width: 204px;
+    position: absolute;
+    top: 63px;
 }
-a.aside-home {
+.aside-home {
+    height: 27px;
+}
+a.aside-home-click {
+    padding: 5.5px 116px 5.5px 32px;
+    vertical-align: sub;
+    color: #f2f2f2;
+    background: #7d7d7d;
+    font-size: 13px;
+}
+span.home-img {
+    background: url("../img/aside/home-img.png") no-repeat left center;
+    padding: 0 11px 0 7px;
+}
+h2.news-zone-h2 a {
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: -1px;
+    background: #153e94;
+    padding: 6px 59.21px 6px 31px;
+    position: relative;
+    display: inline-block;
+}
+span.chat-img {
+    background: url("../img/aside/chat-img.png") no-repeat;
+    padding: 8px;
+    position: absolute;
+    top: 11px;
+    right: 42px;
+}
+ul.news-zone-list li {
+    background: url("../img/aside/aside-list-blue-bg.png") repeat-x bottom;
     padding-left: 32px;
+    border-bottom: 1px solid #ececec;
+}
+ul.news-zone-list {
+    border-right: 1px solid #d9d9d9;
+}
+ul.news-zone-list li:first-child {
+    height: 48px;
+}
+ul.news-zone-list li a {
+    display: block;
+    color: #6a728b;
+    font-size: 14px;
+    letter-spacing: -1px;
+    position: relative;
+}
+ul.news-zone-list li:first-child a {
+    font-size: 16px;
+    padding: 10px 0 5px 0;
+}
+span.news-zone-list-gray {
+    font-size: 11px;
+    color: #adb0bc;
+}
+span.news-zone-arrow {
+    background: url("../img/aside/aside-list-blue-arrow.png") no-repeat;
+    padding: 3.5px 2.5px;
+    position: absolute;
+    top: 21px;
+    right: 27px;
 }
