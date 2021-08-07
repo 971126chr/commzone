@@ -74,6 +74,7 @@ span.search-btn-img {
     width: 204px;
     position: absolute;
     top: 63px;
+    box-shadow: 4px 0 4px #ececec;
 }
 .aside-home {
     height: 27px;
@@ -89,7 +90,7 @@ span.home-img {
     background: url("../img/aside/home-img.png") no-repeat left center;
     padding: 0 11px 0 7px;
 }
-h2.news-zone-h2 a {
+h2.news-zone-h2 a, h2.open-place-h2 a {
     line-height: 32px;
     font-size: 24px;
     font-weight: lighter;
@@ -107,29 +108,33 @@ span.chat-img {
     top: 11px;
     right: 42px;
 }
-ul.news-zone-list li {
+ul.news-zone-list li, ul.open-place-list li {
     background: url("../img/aside/aside-list-blue-bg.png") repeat-x bottom;
     padding-left: 32px;
     border-bottom: 1px solid #ececec;
 }
-ul.news-zone-list {
+ul.news-zone-list, .site-shortcut, ul.open-place-list, .open-communicate-box {
     border-right: 1px solid #d9d9d9;
 }
 ul.news-zone-list li:first-child {
     height: 48px;
 }
-ul.news-zone-list li a {
+ul.news-zone-list li:not(:first-child) {
+    line-height: 30px;
+}
+ul.news-zone-list li a, ul.open-place-list li a {
     display: block;
     color: #6a728b;
     font-size: 14px;
-    letter-spacing: -1px;
+    letter-spacing: -1.7px;
     position: relative;
 }
 ul.news-zone-list li:first-child a {
     font-size: 16px;
     padding: 10px 0 5px 0;
+    letter-spacing: -1px;
 }
-span.news-zone-list-gray {
+span.news-zone-list-gray, span.open-place-list-small {
     font-size: 11px;
     color: #adb0bc;
 }
@@ -137,6 +142,265 @@ span.news-zone-arrow {
     background: url("../img/aside/aside-list-blue-arrow.png") no-repeat;
     padding: 3.5px 2.5px;
     position: absolute;
-    top: 21px;
+    top: 12px;
     right: 27px;
+}
+ul.news-zone-list li:first-child a span.news-zone-arrow {
+    top: 21px;
+}
+.site-shortcut {
+    padding: 15px 26px 25px 24px;
+}
+.broadcasting-shortcut-position {
+    padding-left: 2px;
+}
+.broadcasting-shortcut {
+    width: 151px;
+    border: 2px solid #85a1cb;
+    border-radius: 4px;
+    padding: 4px 0 0 4px;
+}
+.broadcasting-shortcut a {
+    padding: 28px 21.8px 0 0;
+}
+img.broadcasting-img, span.broadcasting-text, img.open-communicate-img, span.open-communicate-text {
+    display: inline-block;
+    vertical-align: baseline;
+}
+span.broadcasting-text {
+    font-size: 10px;
+    color: #5c5c5c;
+    letter-spacing: -2px;
+    line-height: 15px;
+    margin-left: -2px;
+    vertical-align: super;
+}
+strong.broadcasting {
+    font-size: 14px;
+    color: #0c4bac;
+}
+ul.site-shortcut-list {
+    padding-left: 1px;
+    margin-top: 5px;
+    display: inline-block;
+}
+ul.site-shortcut-list::after {
+    display: inline-block;
+    content: "";
+    clear: both;
+}
+ul.site-shortcut-list li {
+    width: 74px;
+    line-height: 30px;
+    background: #ecedee;
+    border-radius: 4px;
+    float: left;
+    padding-left: 12px;
+}
+ul.site-shortcut-list li:nth-child(2) {
+    padding-left: 13px;
+}
+ul.site-shortcut-list li:nth-child(odd) {
+    margin-right: 4px;
+}
+ul.site-shortcut-list li:first-child, ul.site-shortcut-list li:nth-child(2) {
+    margin-bottom: 5px;
+}
+ul.site-shortcut-list li:last-child {
+    line-height: 21px;
+}
+ul.site-shortcut-list li a {
+    font-size: 10px;
+    color: #4e668e;
+    vertical-align: bottom;
+    letter-spacing: -1px;
+}
+ul.site-shortcut-list li a img {
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}
+ul.site-shortcut-list li:last-child a img {
+    vertical-align: super;
+    margin-right: 2px;
+}
+span.site-shortcut-text {
+    display: inline-block;
+    line-height: 13px;
+}
+.vision {
+    line-height: 23px;
+    background: #5382ca;
+    border-radius: 3px;
+    margin-top: 5px;
+    color: #ffffff;
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: -1.3px;
+}
+h2.open-place-h2 a {
+    background: #b0ce01;
+    letter-spacing: -3.49px;
+    padding: 6px 87px 6px 30px;
+}
+h2.open-place-h2 a span.chat-img {
+    top: 8px;
+    right: 67px;
+}
+span.tong-img {
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    background: url("../img/aside/tong.png") no-repeat;
+    padding: 9px 20.5px;
+}
+ul.open-place-list li {
+    height: 46px;
+}
+ul.open-place-list li a {
+    font-size: 16px;
+    letter-spacing: -1.3px;
+    color: #909772;
+    padding: 8px 0 4px 0;
+}
+span.open-place-list-small {
+    color: #b3b79c;
+}
+span.open-place-arrow {
+    background: url("../img/aside/open-place-list-arrow.png") no-repeat;
+    padding: 3.5px 2.5px;
+    position: absolute;
+    top: 20px;
+    right: 27px;
+}
+.open-communicate-box {
+    padding: 15px 26px 14px;
+}
+.open-communicate {
+    border: 2px solid #c5d46d;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+.open-communicate a {
+    padding: 0 0 0 4px;
+}
+span.open-communicate-text {
+    font-size: 10px;
+    color: #5c5c5c;
+    font-weight: bold;
+    letter-spacing: -0.7px;
+    vertical-align: top;
+    padding-top: 4px;
+    line-height: 13px;
+}
+strong.open-communicate-green {
+    color: #698e05;
+    letter-spacing: -1.8px;
+}
+
+/*main 시작*/
+
+.main {
+    padding: 27px 33px 17px 234px;
+    background: #fafafa;
+}
+.today-news, .banner > div {
+    box-shadow: 0 2px 2px #d0d0d0;
+}
+.today-news {
+    display: inline-block;
+    width: 373px;
+    height: 334px;
+    border-radius: 6px;
+    background: url("../img/section/jung-man.png") no-repeat;
+    vertical-align: top;
+}
+h2.today-news-h2 {
+    color: #9c6635;
+    font-size: 11px;
+    padding-left: 17px;
+    line-height: 23px;
+    letter-spacing: -0.5px;
+}
+.today-news a {
+    position: relative;
+    font-size: 0;
+    padding: 37px 373px 297px 0px;
+}
+img.today-news-text {
+    position: absolute;
+    top: 52px;
+    left: 24px;
+}
+.banner, .banner-bottom {
+    display: inline-block;
+    margin-left: 6px;
+}
+.banner-bottom {
+    margin: 9px 0 0 0;
+}
+.banner > div, .banner-bottom > div {
+    width: 181px;
+    height: 162px;
+    border-radius: 6px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.live-talk {
+    border: 1px solid #cacaca;
+    background: #d5d5d5;
+    padding: 17px 0 0 15px;
+}
+p.live-talk-black {
+    font-size: 11px;
+    font-weight: bold;
+    color: #3f3f3f;
+    letter-spacing: -1.3px;
+}
+p.live-talk-blue {
+    font-size: 18px;
+    font-weight: bold;
+    color: #234475;
+    line-height: 23px;
+    margin-top: 5.5px;
+    letter-spacing: -1.5px;
+}
+span.live-talk-bg {
+    background: url("../img/section/live-talk.png") no-repeat;
+    padding: 50px 45px;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+}
+.find-reporter {
+    margin-left: 4.7px;
+    padding: 15px 0 0 18px;
+    background: url("../img/section/find-reporter-bg.png") repeat-x;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #ffffff;
+    letter-spacing: -1px;
+}
+strong.find-reporter-yellow {
+    color: #fff700;
+    font-size: 29px;
+    /*z-index: 1;*/
+}
+span.find-reporter-text-deco {
+    background: url("../img/section/find-reporter-text-deco.png") no-repeat;
+    padding: 21px 40px;
+    position: absolute;
+    top: 23px;
+    right: 26px;
+}
+span.find-reporter-logo {
+    background: url("../img/section/find-reporter-logo.png") no-repeat;
+    padding: 32.5px 45px;
+    position: absolute;
+    bottom: 1px;
+    right: 7px;
+}
+.interview {
+    
 }
