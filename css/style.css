@@ -303,7 +303,7 @@ strong.open-communicate-green {
     padding: 27px 33px 17px 234px;
     background: #fafafa;
 }
-.today-news, .banner > div {
+.today-news, .banner > div, .banner > .banner-bottom > div {
     box-shadow: 0 2px 2px #d0d0d0;
 }
 .today-news {
@@ -335,16 +335,16 @@ img.today-news-text {
     display: inline-block;
     margin-left: 6px;
 }
-.banner-bottom {
-    margin: 9px 0 0 0;
-}
-.banner > div, .banner-bottom > div {
+.banner > div:not(:last-child), .banner-bottom > div {
     width: 181px;
     height: 162px;
     border-radius: 6px;
     display: inline-block;
     vertical-align: top;
     position: relative;
+}
+.banner-bottom {
+    margin: 11px 0 0 0;
 }
 .live-talk {
     border: 1px solid #cacaca;
@@ -358,11 +358,14 @@ p.live-talk-black {
     letter-spacing: -1.3px;
 }
 p.live-talk-blue {
+    margin-top: 5.5px;
+}
+p.live-talk-blue a {
     font-size: 18px;
     font-weight: bold;
     color: #234475;
     line-height: 23px;
-    margin-top: 5.5px;
+    padding: 34px 94px 60px 0px;
     letter-spacing: -1.5px;
 }
 span.live-talk-bg {
@@ -376,10 +379,13 @@ span.live-talk-bg {
     margin-left: 4.7px;
     padding: 15px 0 0 18px;
     background: url("../img/section/find-reporter-bg.png") repeat-x;
+}
+.find-reporter a {
     font-size: 21px;
     font-weight: bold;
     line-height: 28px;
     color: #ffffff;
+    padding: 17px 0px 58px 0px;
     letter-spacing: -1px;
 }
 strong.find-reporter-yellow {
@@ -402,5 +408,72 @@ span.find-reporter-logo {
     right: 7px;
 }
 .interview {
-    
+    background: #fbb425;
+}
+h2.interview-h2 {
+    line-height: 20px;
+    font-size: 11px;
+    color: #fbb425;
+    background: #e1811b;
+    border-radius: 6px 6px 0 0;
+    padding-left: 18px;
+    letter-spacing: -0.8px;
+}
+.interview-main {
+    padding: 16px 0 0 15px;
+    font-size: 20px;
+    line-height: 24px;
+}
+.interview-main a {
+    font-weight: bold;
+    color: #512a00;
+    letter-spacing: -3.5px;
+    padding: 34px 63px 55px 0px;
+}
+span.interview-white {
+    color: #ffffff;
+    letter-spacing: -3px;
+}
+span.interview-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url("../img/section/interview-bg.png") no-repeat;
+    padding: 61px 44.5px;
+}
+.in-house {
+    margin-left: 4.7px;
+    background: #f2764b;
+}
+h2.in-house-h2 {
+    background: #bf5035;
+    line-height: 20px;
+    font-size: 10px;
+    padding-left: 13px;
+    color: #ff7653;
+    border-radius: 6px 6px 0 0;
+    letter-spacing: -0.8px;
+}
+.in-house-main {
+    color: #753728;
+    padding: 16px 0 0 14px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -1.5px;
+}
+.in-house-main a {
+    padding: 36px 83px 75px 0px;
+}
+span.in-house-white {
+    color: #fbd6c9;
+    font-size: 24px;
+    letter-spacing: -3px;
+}
+span.in-house-bg {
+    background: url("../img/section/morning-live-bg.png") no-repeat;
+    position: absolute;
+    bottom: 14px;
+    right: 16px;
+    padding: 35.5px 27px;
 }
