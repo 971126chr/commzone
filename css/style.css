@@ -67,6 +67,15 @@ span.search-btn-img {
     background: url("../img/header/search-img.png") no-repeat center center;
     padding: 3.5px 16.5px 3.5px 13.5px;
 }
+button.hamburger-menu {
+    position: absolute;
+    top: 30px;
+    left: 75px;
+    line-height: 0;
+    display: none;
+    border: none;
+    background: none;
+}
 
 /*aside 시작*/
 
@@ -303,7 +312,7 @@ strong.open-communicate-green {
     padding: 27px 33px 17px 234px;
     background: #fafafa;
 }
-.today-news, .banner > div, .banner > .banner-bottom > div {
+.today-news, .banner > div, .banner > .banner-bottom > div, .banner-more > div, .banner-talk > div {
     box-shadow: 0 2px 2px #d0d0d0;
 }
 .today-news {
@@ -331,11 +340,11 @@ img.today-news-text {
     top: 52px;
     left: 24px;
 }
-.banner, .banner-bottom {
+.banner, .banner-bottom, .banner-more, .banner-talk {
     display: inline-block;
     margin-left: 6px;
 }
-.banner > div:not(:last-child), .banner-bottom > div {
+.banner > div:not(:last-child), .banner-bottom > div, .banner-more > div, .banner-talk > div {
     width: 181px;
     height: 162px;
     border-radius: 6px;
@@ -476,4 +485,242 @@ span.in-house-bg {
     bottom: 14px;
     right: 16px;
     padding: 35.5px 27px;
+}
+.banner-more {
+    margin: 28px 0 0 0;
+}
+.banner-more > div, .banner-talk > div {
+    width: 373px;
+    height: 141px;
+}
+.banner-talk > div {
+    height: 113px;
+}
+.hot-issue {
+    position: relative;
+}
+h2.hot-issue-h2 {
+    line-height: 23px;
+    background: #d5e241;
+    color: #436a28;
+    padding-left: 22px;
+    border-radius: 6px 6px 0 0;
+    font-size: 11px;
+    letter-spacing: -1px;
+    position: relative;
+}
+h2.hot-issue-h2 a {
+    position: absolute;
+    right: 20px;
+    letter-spacing: 0;
+}
+span.hot-issue-more {
+    color: #91aa38;
+    font-size: 10px;
+    background: url("../img/section/yoga-more-plus.png") no-repeat right center;
+    padding-right: 9px;
+}
+.hot-issue-bg {
+    background: url("../img/section/yoga-bg.png") no-repeat;
+    border-radius: 0 0 6px 6px;
+}
+.hot-issue-main {
+    padding: 14px 0 25px 22px;
+    line-height: 23px;
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: -1.9px;
+}
+.hot-issue-main a {
+    padding: 39px 249px 29px 0px;
+}
+span.hot-issue-green-text {
+    font-size: 26px;
+    color: #3a5c23;
+    font-weight: lighter;
+    letter-spacing: -0.3px;
+}
+span.hot-issue-teacher {
+    position: absolute;
+    background: url("../img/section/yoga-teacher.png") no-repeat;
+    padding: 66.5px 62px;
+    bottom: 0;
+    right: 17px;
+}
+.live-poll, .idea {
+    margin-left: 5.4px;
+}
+h2.live-poll-h2 {
+    line-height: 24px;
+    background: #b0b4c0;
+    color: #fefefe;
+    padding-left: 21px;
+    font-size: 11px;
+    letter-spacing: -0.8px;
+}
+span.live-poll-more {
+    color: #5b5e64;
+    background: url("../img/section/live-poll-plus.png") no-repeat right center;
+}
+.live-poll-main {
+    background: #d3d5db;
+    padding: 22px 20px;
+    position: relative;
+}
+p.live-poll-text {
+    color: #2a3d64;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: -2px;
+    display: inline-block;
+}
+span.live-poll-small {
+    font-size: 19px;
+    letter-spacing: -2.8px;
+}
+span.live-poll-date {
+    font-size: 11px;
+    color: #6b6e78;
+    margin-top: 12px;
+    padding-left: 2px;
+    letter-spacing: 0.4px;
+    display: inline-block;
+}
+.button-position {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+button.vote {
+    width: 74px;
+    height: 73px;
+    border-radius: 100%;
+    border: 1px solid #bdbec4;
+    color: #495d86;
+    font-size: 12.32px;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+img.vote-img {
+    display: block;
+    padding: 0 0 1px 29px;
+}
+button.after-vote {
+    width: 72px;
+    border: none;
+    background: #3c4e73;
+    color: #ecebe9;
+    vertical-align: top;
+    margin-left: 5px;
+}
+.banner-talk {
+    margin: 11px 0 0 0;
+}
+.banner-talk > div {
+    border: 1px solid #dedede;
+}
+.talk {
+    padding: 12px 21px 0 19px;
+    position: relative;
+}
+h2.talk-h2 {
+    font-size: 12.5px;
+    color: #495d86;
+}
+ul.talk-list {
+    margin-top: 7px;
+    padding-left: 1px;
+    line-height: 21px;
+}
+ul.talk-list li {
+    background: url("../img/section/talk-list-marker.png") no-repeat left center;
+    padding-left: 11px;
+}
+ul.talk-list li a {
+    letter-spacing: -0.3px;
+    font-size: 12px;
+    color: #666666;
+}
+span.talk-list-text {
+    width: 260px;
+    display: inline-block;
+}
+span.talk-list-date {
+    letter-spacing: -0.8px;
+    display: inline-block;
+}
+span.talk-more {
+    position: absolute;
+    top: 16px;
+    right: 21px;
+    color: #666666;
+    background: url("../img/section/talk-plus.png") no-repeat right center;
+}
+.idea {
+    padding: 14px 20px 0 20px;
+}
+h2.idea-h2 {
+    color: #668c00;
+}
+ul.idea-list li {
+    background: url("../img/section/idea-list-marker.png") no-repeat left center;
+}
+span.idea-more {
+    top: 17px;
+    right: 20px;
+}
+
+/*footer 시작*/
+
+.footer {
+    border-top: 1px solid #ebebeb;
+    padding: 1px 0 0 33px;
+    line-height: 26px;
+}
+a.samsung {
+    background: url("../img/footer/samsung.png") no-repeat;
+    font-size: 0;
+    padding: 13px 40.5px;
+    vertical-align: middle;
+}
+p.copyright {
+    display: inline-block;
+    font-size: 10px;
+    color: #c5c5c5;
+    margin-left: 4px;
+    letter-spacing: -0.4px;
+}
+
+@media all and (min-width:320px) and (max-width:767px) {
+    .wrap {
+        max-width: 767px;
+    }
+    span.header-date {
+        top: 20px;
+    }
+    .aside {
+        position: fixed;
+        /*
+        left: -204px;
+        */
+        transition: left .3s ease-in-out;
+        overflow: hidden;
+    }
+    button.hamburger-menu {
+        display: block;
+    }
+    .main > .main-section, .add-banner {
+        text-align: center;
+    }
+    .banner, .banner-bottom, .banner-more, .banner-talk, .live-poll, .idea {
+        margin-left: 0;
+        text-align: left;
+    }
+    .banner-more, .banner-talk {
+        display: initial;
+    }
+    .banner, .live-poll, .idea, .hot-issue, .talk {
+        margin-top: 15px;
+    }
 }
